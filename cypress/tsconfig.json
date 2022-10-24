@@ -5,5 +5,4 @@
       "types": ["cypress", "node", "cypress-xpath", "cypress-real-events", "cypress-file-upload", "cy-verify-downloads"]
     },
     "include": ["**/*.ts"]
-  }
-  
+}
