@@ -14,7 +14,8 @@ export default defineConfig({
       demoQA:'https://demoqa.com/',
       theInternet:'https://the-internet.herokuapp.com/',
       angular:'https://www.globalsqa.com/'
-    }
+    },
+    experimentalSessionAndOrigin: true,
   },
   viewportHeight:1000,
   viewportWidth:1400
