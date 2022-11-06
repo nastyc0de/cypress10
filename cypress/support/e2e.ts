@@ -22,3 +22,16 @@ import('cypress-real-events/support');
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+beforeEach(() => {
+    cy.session('mySession', () => {
+        cy.visit(`${Cypress.env('demoQA')}login`)
+        cy.get('#userName').type('alpha');
+        cy.get('#password').type('@Dmin123');
+        cy.get('#login').click();
+        cy.url().should('contain','profile')
+    })
+});
+after(() => {
+    cy.clearCookies()
+});
